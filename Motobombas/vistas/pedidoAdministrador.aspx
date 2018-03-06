@@ -88,7 +88,7 @@
         </tr>
         <tr>
             <td class="auto-style16">
-                <asp:Label ID="L_cantidad" runat="server" Text="Cantidad:" Visible="False"></asp:Label>
+                <asp:Label ID="Lb_cantidad" runat="server" Text="Cantidad:" Visible="False"></asp:Label>
             </td>
             <td class="auto-style17">
                 <asp:TextBox ID="TB_cantidad" runat="server" MaxLength="6" TextMode="Number" Visible="False" Width="70px" OnTextChanged="TB_cantidad_TextChanged"></asp:TextBox>

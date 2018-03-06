@@ -24,11 +24,13 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table class="auto-style12">
         <tr>
-            <td class="auto-style25" colspan="2">PQR VISITANTE</td>
+            <td class="auto-style25" colspan="2">
+                <asp:Label ID="Lb_pqr_v" runat="server" Text="PQR VISITANTE"></asp:Label>
+            </td>
         </tr>
         <tr>
             <td class="auto-style27">
-                <asp:Label ID="Label1" runat="server" CssClass="auto-style23" Text="Correo:" style="color: #FFFFFF"></asp:Label>
+                <asp:Label ID="Lb_correo_v" runat="server" CssClass="auto-style23" Text="Correo:" style="color: #FFFFFF"></asp:Label>
             </td>
             <td>
                 <asp:TextBox ID="TB_correo" runat="server" TextMode="Email" CssClass="auto-style26"></asp:TextBox>
@@ -37,7 +39,7 @@
         </tr>
         <tr>
             <td class="auto-style27">
-                <asp:Label ID="Label2" runat="server" CssClass="auto-style23" Text="Queja:" style="color: #FFFFFF"></asp:Label>
+                <asp:Label ID="Lb_queja_v" runat="server" CssClass="auto-style23" Text="Queja:" style="color: #FFFFFF"></asp:Label>
             </td>
             <td>
                 <asp:TextBox ID="TB_queja" runat="server" Height="83px" Width="145px"></asp:TextBox>

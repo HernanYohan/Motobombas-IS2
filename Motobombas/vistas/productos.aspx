@@ -10,7 +10,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table class="auto-style12">
         <tr>
-            <td class="auto-style23">CATALOGO DE PRODUCTOS </td>
+            <td class="auto-style23">
+                <asp:Label ID="Lb_catalogo_p" runat="server" Text="Catalogo de Productos"></asp:Label>
+            </td>
         </tr>
         <tr>
             <td class="auto-style23">
@@ -18,7 +20,7 @@
         </tr>
         <tr>
             <td>
-                <asp:GridView ID="GridView1" runat="server" align="Center" AutoGenerateColumns="False" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" DataSourceID="ObjectDataSource1" GridLines="Horizontal" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" AllowPaging="True">
+                <asp:GridView ID="GV_catalogo" runat="server" align="Center" AutoGenerateColumns="False" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" DataSourceID="ObjectDataSource1" GridLines="Horizontal" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" AllowPaging="True">
                     <Columns>
                         <asp:BoundField DataField="referencia" HeaderText="Referenica" />
                         <asp:BoundField DataField="valor_c" HeaderText="Precio" />

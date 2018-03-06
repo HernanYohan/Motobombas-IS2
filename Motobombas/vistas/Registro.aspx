@@ -33,12 +33,14 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table class="auto-style12">
         <tr>
-            <td class="auto-style23" colspan="2"><strong>Registrate ya</strong></td>
+            <td class="auto-style23" colspan="2">
+                <asp:Label ID="Lb_registrar" runat="server" Text="Registrate ahora"></asp:Label>
+            </td>
             <td class="auto-style23">&nbsp;</td>
         </tr>
         <tr>
             <td class="auto-style27">
-                <asp:Label ID="Label1" runat="server" style="color: #FFFFFF" Text="Nombre:"></asp:Label>
+                <asp:Label ID="Lb_nombre" runat="server" style="color: #FFFFFF" Text="Nombre:"></asp:Label>
             </td>
             <td>
                 <asp:TextBox ID="TB_nombre" runat="server" MaxLength="20" ValidationGroup="v1"></asp:TextBox>
@@ -50,7 +52,7 @@
         </tr>
         <tr>
             <td class="auto-style27">
-                <asp:Label ID="Label2" runat="server" style="color: #FFFFFF" Text="Apellido:"></asp:Label>
+                <asp:Label ID="Lb_apellido" runat="server" style="color: #FFFFFF" Text="Apellido:"></asp:Label>
             </td>
             <td>
                 <asp:TextBox ID="TB_apellido" runat="server" MaxLength="20" ValidationGroup="v1"></asp:TextBox>
@@ -62,7 +64,7 @@
         </tr>
         <tr>
             <td class="auto-style28">
-                <asp:Label ID="Label3" runat="server" style="color: #FFFFFF" Text="Direccion:"></asp:Label>
+                <asp:Label ID="Lb_direccion" runat="server" style="color: #FFFFFF" Text="Direccion:"></asp:Label>
             </td>
             <td class="auto-style29">
                 <asp:TextBox ID="TB_direccion" runat="server" MaxLength="20" ValidationGroup="v1"></asp:TextBox>
@@ -73,7 +75,7 @@
         </tr>
         <tr>
             <td class="auto-style26">
-                <asp:Label ID="Label4" runat="server" style="color: #FFFFFF" Text="Telefono:"></asp:Label>
+                <asp:Label ID="Lb_telefono" runat="server" style="color: #FFFFFF" Text="Telefono:"></asp:Label>
             </td>
             <td class="auto-style24">&nbsp;&nbsp;&nbsp;
                 <asp:TextBox ID="TB_tl" runat="server" MaxLength="11" OnTextChanged="TB_tl_TextChanged" Rows="11" TextMode="Number" ValidationGroup="v1"></asp:TextBox>
@@ -83,7 +85,7 @@
         </tr>
         <tr>
             <td class="auto-style27">
-                <asp:Label ID="Label7" runat="server" ForeColor="White" Text="Correo (Gmail)"></asp:Label>
+                <asp:Label ID="Lb_correo" runat="server" ForeColor="White" Text="Correo (Gmail)"></asp:Label>
             </td>
             <td>
                 <asp:TextBox ID="TB_correo" runat="server" MaxLength="25"></asp:TextBox>
@@ -95,7 +97,7 @@
         </tr>
         <tr>
             <td class="auto-style27">
-                <asp:Label ID="Label5" runat="server" style="color: #FFFFFF" Text="Usuario:"></asp:Label>
+                <asp:Label ID="Lb_usuario" runat="server" style="color: #FFFFFF" Text="Usuario:"></asp:Label>
             </td>
             <td>
                 <asp:TextBox ID="TB_usuario" runat="server" MaxLength="10" ValidationGroup="v1"></asp:TextBox>
@@ -106,7 +108,7 @@
         </tr>
         <tr>
             <td class="auto-style27">
-                <asp:Label ID="Label6" runat="server" style="color: #FFFFFF" Text="Clave:"></asp:Label>
+                <asp:Label ID="Lb_clave" runat="server" style="color: #FFFFFF" Text="Clave:"></asp:Label>
             </td>
             <td>
                 <asp:TextBox ID="TB_clave" runat="server" MaxLength="10" TextMode="Password" ValidationGroup="v1"></asp:TextBox>
@@ -118,7 +120,7 @@
         </tr>
         <tr>
             <td class="auto-style27">
-                <asp:Label ID="Label8" runat="server" ForeColor="White" Text="Confirmar Clave:"></asp:Label>
+                <asp:Label ID="Lb_confirmarClave" runat="server" ForeColor="White" Text="Confirmar Clave:"></asp:Label>
             </td>
             <td>
                 <asp:TextBox ID="TB_confirmarClave" runat="server" TextMode="Password" ValidationGroup="v1" MaxLength="10"></asp:TextBox>

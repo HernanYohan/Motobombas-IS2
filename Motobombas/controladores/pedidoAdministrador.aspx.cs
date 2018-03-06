@@ -43,7 +43,7 @@ public partial class vistas_pedidoAdministrador : System.Web.UI.Page
         
 
         Session["referencia"] = DDL_referencia.SelectedValue;
-        L_cantidad.Visible = true;
+        Lb_cantidad.Visible = true;
         TB_cantidad.Visible = true;
         
 

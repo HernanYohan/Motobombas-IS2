@@ -18,11 +18,12 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table class="auto-style24">
     <tr>
-        <td class="auto-style25" colspan="2"><span class="nuevoEstilo15">Ver pedido </span></td>
+        <td class="auto-style25" colspan="2"><span class="nuevoEstilo15">&nbsp;<asp:Label ID="Lb_verpedido" runat="server" Text="Ver Pedido"></asp:Label>
+            </span></td>
     </tr>
     <tr>
         <td class="auto-style26" colspan="2">
-            <asp:GridView ID="GridView1" runat="server" align="Center" AutoGenerateColumns="False" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" DataSourceID="productos_cliente" GridLines="Horizontal" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" AllowPaging="True">
+            <asp:GridView ID="GV_verPedido" runat="server" align="Center" AutoGenerateColumns="False" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" DataSourceID="productos_cliente" GridLines="Horizontal" OnSelectedIndexChanged="GridView1_SelectedIndexChanged" AllowPaging="True">
                 <Columns>
                     <asp:BoundField DataField="referencia" HeaderText="Referencia" />
                     <asp:TemplateField HeaderText="Imagen">
