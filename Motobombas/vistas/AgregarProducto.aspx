@@ -72,7 +72,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <asp:Label ID="Label1" runat="server" CssClass="nuevoEstilo13" Text="Agregar Producto"></asp:Label>
+    <asp:Label ID="Lb_agregar_productos" runat="server" CssClass="nuevoEstilo13" Text="Agregar Producto"></asp:Label>
     <table class="auto-style1">
         <tr>
             <td colspan="2">
@@ -100,7 +100,7 @@
                     </tr>
                     <tr>
                         <td class="auto-style22">
-                <asp:Label ID="Label2" runat="server" Text="Marca " CssClass="nuevoEstilo14" style="font-size: large"></asp:Label>
+                <asp:Label ID="Lb_marca" runat="server" Text="Marca " CssClass="nuevoEstilo14" style="font-size: large"></asp:Label>
                         </td>
                         <td class="auto-style19">
                 <asp:TextBox ID="TB_marcaprod" runat="server" Width="226px" MaxLength="15"></asp:TextBox>
@@ -112,7 +112,7 @@
                     </tr>
                     <tr>
                         <td class="auto-style14">
-                <asp:Label ID="Label3" runat="server" Text="Referencia" CssClass="nuevoEstilo15" style="font-size: large"></asp:Label>
+                <asp:Label ID="Lb_referencia" runat="server" Text="Referencia" CssClass="nuevoEstilo15" style="font-size: large"></asp:Label>
                         </td>
                         <td class="auto-style12">
                 <asp:TextBox ID="TB_potenciaprod" runat="server" Width="228px" MaxLength="15"></asp:TextBox>
@@ -123,7 +123,7 @@
                     </tr>
                     <tr>
                         <td class="auto-style15">
-                <asp:Label ID="Label4" runat="server" Text="Valor" CssClass="nuevoEstilo16" style="font-size: large"></asp:Label>
+                <asp:Label ID="Lb_valor" runat="server" Text="Valor" CssClass="nuevoEstilo16" style="font-size: large"></asp:Label>
                         </td>
                         <td class="auto-style18">
                 <asp:TextBox ID="TB_valorprod" runat="server" Width="228px" TextMode="Number"></asp:TextBox>
@@ -134,7 +134,7 @@
                     </tr>
                     <tr>
                         <td class="auto-style21">
-                <asp:Label ID="Label5" runat="server" Text="Cantidad" style="font-size: large; color: #FFFFFF; background-color: #003366"></asp:Label>
+                <asp:Label ID="Lb_cantidad" runat="server" Text="Cantidad" style="font-size: large; color: #FFFFFF; background-color: #003366"></asp:Label>
                         </td>
                         <td class="auto-style17">
                 <asp:TextBox ID="TB_cantidadprod" runat="server" Width="230px" TextMode="Number"></asp:TextBox>
@@ -145,7 +145,7 @@
                     </tr>
                     <tr>
                         <td class="auto-style21">
-                            <asp:Label ID="Label6" runat="server" ForeColor="#FFFFCC" style="font-size: large" Text="Proveedor "></asp:Label>
+                            <asp:Label ID="Lb_proveedor" runat="server" ForeColor="#FFFFCC" style="font-size: large" Text="Proveedor "></asp:Label>
                         </td>
                         <td class="auto-style17">
                             <asp:DropDownList ID="DDL_proveedor" runat="server" DataSourceID="proveedor" DataTextField="nombre" DataValueField="id_proveedor" Height="59px" Width="135px">

@@ -11,11 +11,13 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table class="auto-style12">
         <tr>
-            <td class="auto-style23" colspan="2">Accesorios</td>
+            <td class="auto-style23" colspan="2">
+                <asp:Label ID="LB_Accesorios_visitante" runat="server" Text="Accesorios"></asp:Label>
+            </td>
         </tr>
         <tr>
             <td>
-                <asp:GridView ID="GridView1" runat="server" align="Center" AutoGenerateColumns="False" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" DataSourceID="ODS_accesorios" GridLines="Horizontal" OnSelectedIndexChanged="GridView1_SelectedIndexChanged2" AllowPaging="True">
+                <asp:GridView ID="GV_Accesorios_visitante" runat="server" align="Center" AutoGenerateColumns="False" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" DataSourceID="ODS_accesorios" GridLines="Horizontal" OnSelectedIndexChanged="GridView1_SelectedIndexChanged2" AllowPaging="True">
                     <Columns>
                         <asp:BoundField DataField="referencia" HeaderText="Referencia" />
                         <asp:BoundField DataField="valor_c" HeaderText="Precio" />

@@ -6,7 +6,7 @@
     <table class="auto-style1">
         <tr>
             <td>
-                <asp:GridView ID="GridView1" runat="server" align="Center" AutoGenerateColumns="False" CellPadding="4" DataSourceID="Edit_adminstrador" ForeColor="#333333" GridLines="None" DataKeyNames="id_cliente" AllowPaging="True" AllowSorting="True" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+                <asp:GridView ID="GV_editar_administrador" runat="server" align="Center" AutoGenerateColumns="False" CellPadding="4" DataSourceID="Edit_adminstrador" ForeColor="#333333" GridLines="None" DataKeyNames="id_cliente" AllowPaging="True" AllowSorting="True" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
                     <AlternatingRowStyle BackColor="White" />
                     <Columns>
                         <asp:TemplateField HeaderText="Nombre">

@@ -22,7 +22,7 @@ public partial class ModificarProducto : System.Web.UI.Page
     {
         int index = e.RowIndex;
         ClientScriptManager cm = this.ClientScript;
-        FileUpload uploadControl = GridView1.Rows[index].FindControl("FU_imagen") as FileUpload;
+        FileUpload uploadControl = GV_ver_productos.Rows[index].FindControl("FU_imagen") as FileUpload;
         
         if (uploadControl.HasFile)
         {
@@ -47,7 +47,7 @@ public partial class ModificarProducto : System.Web.UI.Page
         }
 
        
-        DropDownList categoria = GridView1.Rows[index].FindControl("DDL_categoria") as DropDownList;
+        DropDownList categoria = GV_ver_productos.Rows[index].FindControl("DDL_categoria") as DropDownList;
 
         if (categoria.SupportsDisabledAttribute)
         {

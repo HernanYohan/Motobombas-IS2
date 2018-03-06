@@ -10,7 +10,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table class="auto-style25">
         <tr>
-            <td class="auto-style24" colspan="2">Catalogo Cliente</td>
+            <td class="auto-style24" colspan="2">
+                <asp:Label ID="Lb_catalogo_c" runat="server" Text="Catalogo Cliente"></asp:Label>
+            </td>
         </tr>
         <tr>
             <td>

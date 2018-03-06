@@ -11,7 +11,7 @@
     <table class="auto-style26">
     <tr>
         <td style="text-align: center">
-            <asp:Label ID="Label1" runat="server" style="color: #FFFFFF; text-align: center" Text="Historial Cliente"></asp:Label>
+            <asp:Label ID="Lb_historial_c" runat="server" style="color: #FFFFFF; text-align: center" Text="Historial Cliente"></asp:Label>
         </td>
     </tr>
     <tr>

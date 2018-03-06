@@ -18,19 +18,20 @@
             font-size: xx-large;
             width: 663px;
         }
-        .auto-style11 {
-            font-size: xx-large;
-        }
-    </style>
+        </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table class="auto-style1" style="height: 210px">
         <tr>
-            <td class="auto-style7" colspan="2">Agregar Proveedor</td>
+            <td class="auto-style7" colspan="2">
+                <asp:Label ID="Lb_agregar_proveedor" runat="server" Text="Agregar Proveedor "></asp:Label>
+            </td>
             <td class="auto-style7">&nbsp;</td>
         </tr>
         <tr>
-            <td style="text-align: right; color: #FFFFFF" class="auto-style9"><span class="auto-style11">Nombre</span>:</td>
+            <td style="text-align: right; color: #FFFFFF" class="auto-style9">
+                <asp:Label ID="Lb_nombre_p" runat="server" Text="Nombre :"></asp:Label>
+            </td>
             <td style="text-align: left">
                 <asp:TextBox ID="TB_nombre" runat="server" MaxLength="20"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TB_nombre" ErrorMessage="*" ForeColor="White" ValidationGroup="v1"></asp:RequiredFieldValidator>
@@ -40,7 +41,9 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style10" style="text-align: right">Telefono:</td>
+            <td class="auto-style10" style="text-align: right">
+                <asp:Label ID="Lb_telefono_p" runat="server" Text="Telefono:"></asp:Label>
+            </td>
             <td style="text-align: left">
                 <asp:TextBox ID="TB_telefono" runat="server" TextMode="Number" MaxLength="13"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TB_telefono" ErrorMessage="*" ForeColor="White" ValidationGroup="v1"></asp:RequiredFieldValidator>
@@ -50,7 +53,9 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style10" style="text-align: right">Correo(Gmail):</td>
+            <td class="auto-style10" style="text-align: right">
+                <asp:Label ID="Lb_correo_p" runat="server" Text="Correo(Gmail)"></asp:Label>
+            </td>
             <td style="text-align: left">
                 <asp:TextBox ID="TB_correo" runat="server" TextMode="Email" MaxLength="25"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TB_correo" ErrorMessage="*" ForeColor="White" ValidationGroup="v1"></asp:RequiredFieldValidator>

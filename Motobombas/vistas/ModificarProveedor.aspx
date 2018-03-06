@@ -25,13 +25,13 @@
                 <table class="auto-style6">
                     <tr>
                         <td>
-    <asp:Label ID="Label1" runat="server" CssClass="auto-style2" Text="Modificar Proveedor"></asp:Label>
+    <asp:Label ID="Lb_modificar_proveedor" runat="server" CssClass="auto-style2" Text="Modificar Proveedor"></asp:Label>
                         </td>
                         <td rowspan="2">&nbsp;</td>
                     </tr>
                     <tr>
                         <td>
-                <asp:GridView ID="GridView1" runat="server" align="Center" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="id_proveedor" DataSourceID="proveedor" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+                <asp:GridView ID="GV_modificar_p" runat="server" align="Center" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="id_proveedor" DataSourceID="proveedor" ForeColor="#333333" GridLines="None" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
                     <AlternatingRowStyle BackColor="White" />
                     <Columns>
                         <asp:TemplateField HeaderText="Nombre">

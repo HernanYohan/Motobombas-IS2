@@ -14,11 +14,13 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table class="auto-style25">
         <tr>
-            <td class="auto-style26" colspan="2">Accesorios</td>
+            <td class="auto-style26" colspan="2">
+                <asp:Label ID="LB_Accesorios_c" runat="server" Text="Accesorios"></asp:Label>
+            </td>
         </tr>
         <tr>
             <td>
-                <asp:GridView ID="GV_accesorios_cliente" runat="server" align="Center" AutoGenerateColumns="False" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" DataSourceID="ODS_accesorios_cliente" GridLines="Horizontal" OnRowCommand="GV_accesorios_cliente_RowCommand" OnSelectedIndexChanged="GV_accesorios_cliente_SelectedIndexChanged" AllowPaging="True">
+                <asp:GridView ID="GV_accesorios_c" runat="server" align="Center" AutoGenerateColumns="False" BackColor="White" BorderColor="#336666" BorderStyle="Double" BorderWidth="3px" CellPadding="4" DataSourceID="ODS_accesorios_cliente" GridLines="Horizontal" OnRowCommand="GV_accesorios_cliente_RowCommand" OnSelectedIndexChanged="GV_accesorios_cliente_SelectedIndexChanged" AllowPaging="True">
                     <Columns>
                         <asp:BoundField DataField="referencia" HeaderText="Referencia" />
                         <asp:BoundField DataField="valor_c" HeaderText="Precio" />

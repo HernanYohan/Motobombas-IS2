@@ -15,7 +15,7 @@
         </tr>
         <tr>
             <td style="text-align: center">
-                <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" style="text-align: center" Text="Recuperar" ValidationGroup="v1" />
+                <asp:Button ID="B_recuperarC" runat="server" OnClick="Button2_Click" style="text-align: center" Text="Recuperar" ValidationGroup="v1" />
             </td>
             <td>&nbsp;</td>
         </tr>

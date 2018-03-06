@@ -20,7 +20,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table class="auto-style24">
     <tr>
-        <td class="nuevoEstilo15" colspan="3">Editar Perfil</td>
+        <td class="nuevoEstilo15" colspan="3">
+            <asp:Label ID="Lb_editar_perfil" runat="server" Text="Editar Perfil"></asp:Label>
+        </td>
     </tr>
     <tr>
         <td class="nuevoEstilo15">

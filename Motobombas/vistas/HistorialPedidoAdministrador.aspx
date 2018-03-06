@@ -12,7 +12,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <asp:Label ID="Label1" runat="server" CssClass="auto-style1" Text="Historial Pedido"></asp:Label>
+    <asp:Label ID="Lb_historial_p" runat="server" CssClass="auto-style1" Text="Historial Pedido"></asp:Label>
     <table class="auto-style2" align="center">
         <tr>
             <td>

@@ -17,7 +17,7 @@
                             <table class="auto-style2">
                                 <tr>
                                     <td>
-                                        <asp:Label ID="Label8" runat="server" style="color: #FFFFFF; font-size: xx-large" Text="Ver Ususarios"></asp:Label>
+                                        <asp:Label ID="Lb_ver_u" runat="server" style="color: #FFFFFF; font-size: xx-large" Text="Ver Ususarios"></asp:Label>
                                     </td>
                                 </tr>
                                 <tr>

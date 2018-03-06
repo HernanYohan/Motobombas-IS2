@@ -141,7 +141,7 @@
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-    <asp:Label ID="Label1" runat="server" CssClass="nuevoEstilo12" Text="Agrega Usuario"></asp:Label>
+    <asp:Label ID="Lb_agregar_usuarios" runat="server" CssClass="nuevoEstilo12" Text="Agrega Usuario"></asp:Label>
     <table class="auto-style1">
         <tr>
             <td colspan="2">
@@ -155,7 +155,7 @@
                         <td class="auto-style10" rowspan="8">
                             &nbsp;</td>
                         <td class="auto-style19">
-                <asp:Label ID="Label2" runat="server" Text="Nombre" CssClass="nuevoEstilo14"></asp:Label>
+                <asp:Label ID="Lb_nombre_u" runat="server" Text="Nombre" CssClass="nuevoEstilo14"></asp:Label>
                         </td>
                         <td class="auto-style20">
                 <asp:TextBox ID="TB_nombrecliente" runat="server" OnTextChanged="TB_nombrecliente_TextChanged" MaxLength="20"></asp:TextBox>
@@ -167,7 +167,7 @@
                     </tr>
                     <tr>
                         <td class="auto-style21">
-                <asp:Label ID="Label3" runat="server" Text="Apellido" CssClass="nuevoEstilo15"></asp:Label>
+                <asp:Label ID="Lb_apellido_u" runat="server" Text="Apellido" CssClass="nuevoEstilo15"></asp:Label>
                         </td>
                         <td class="auto-style22">
                 <asp:TextBox ID="TB_apellidocliente" runat="server" MaxLength="20"></asp:TextBox>
@@ -179,7 +179,7 @@
                     </tr>
                     <tr>
                         <td class="auto-style23">
-                <asp:Label ID="Label4" runat="server" Text="Teléfono" CssClass="nuevoEstilo16"></asp:Label>
+                <asp:Label ID="Lb_telefono_u" runat="server" Text="Teléfono" CssClass="nuevoEstilo16"></asp:Label>
                         </td>
                         <td class="auto-style24">
                 <asp:TextBox ID="TB_telefonocliente" runat="server" MaxLength="13" OnTextChanged="TB_telefonocliente_TextChanged" TextMode="Number"></asp:TextBox>
@@ -190,7 +190,7 @@
                     </tr>
                     <tr>
                         <td class="auto-style25">
-                <asp:Label ID="Label5" runat="server" Text="Dirección" CssClass="nuevoEstilo17"></asp:Label>
+                <asp:Label ID="Lb_direccion_u" runat="server" Text="Dirección" CssClass="nuevoEstilo17"></asp:Label>
                         </td>
                         <td class="auto-style26">
                 <asp:TextBox ID="TB_direccioncliente" runat="server" MaxLength="20"></asp:TextBox>
@@ -201,7 +201,7 @@
                     </tr>
                     <tr>
                         <td class="auto-style12">
-                <asp:Label ID="Label6" runat="server" Text="Correo (Gmail)" CssClass="nuevoEstilo18"></asp:Label>
+                <asp:Label ID="Lb_correo_u" runat="server" Text="Correo (Gmail)" CssClass="nuevoEstilo18"></asp:Label>
                         </td>
                         <td class="auto-style13">
                 <span class="nuevoEstilo13">
@@ -214,7 +214,10 @@
                     </tr>
                     <tr>
                         <td class="auto-style12">
-                            Usuario</td>
+                <span class="nuevoEstilo13">
+                            <asp:Label ID="Lb_usuario_u" runat="server" Text="Usuario"></asp:Label>
+                </span>
+                        </td>
                         <td class="auto-style13">
                             <asp:TextBox ID="TB_usuario" runat="server" MaxLength="10"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TB_usuario" ErrorMessage="*" ForeColor="White" ValidationGroup="v1"></asp:RequiredFieldValidator>
@@ -224,7 +227,10 @@
                     </tr>
                     <tr>
                         <td class="auto-style12">
-                            Clave</td>
+                <span class="nuevoEstilo13">
+                            <asp:Label ID="Lb_clave_u" runat="server" Text="Clave"></asp:Label>
+                </span>
+                        </td>
                         <td class="auto-style13">
                             <asp:TextBox ID="TB_clave" runat="server" TextMode="Password" MaxLength="15"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="TB_clave" ErrorMessage="*" ForeColor="White" ValidationGroup="v1"></asp:RequiredFieldValidator>
@@ -235,8 +241,8 @@
                     </tr>
                     <tr>
                         <td class="auto-style12">
-                            Confirme<br />
-                            Clave</td>
+                            <asp:Label ID="Lb_confirmar_clave" runat="server" Text="Confirmar Clave"></asp:Label>
+                        </td>
                         <td class="auto-style13">
                             <asp:TextBox ID="TB_confirmarClave" runat="server" TextMode="Password" ValidationGroup="v1" MaxLength="15"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="TB_confirmarClave" ErrorMessage="*" ValidationGroup="v1"></asp:RequiredFieldValidator>

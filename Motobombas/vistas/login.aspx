@@ -14,11 +14,13 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table class="auto-style12" style="height: 185px">
     <tr>
-        <td class="auto-style23" colspan="3">Inicio Sesion</td>
+        <td class="auto-style23" colspan="3">
+            <asp:Label ID="Lb_inicio_sesion" runat="server" Text="Inicio Sesion"></asp:Label>
+        </td>
     </tr>
     <tr>
         <td style="text-align: right" class="auto-style24">
-            <asp:Label ID="Label1" runat="server" style="color: #FFFFFF; text-align: right" Text="Usuario:"></asp:Label>
+            <asp:Label ID="Lb_usuario" runat="server" style="color: #FFFFFF; text-align: right" Text="Usuario:"></asp:Label>
         </td>
         <td colspan="2" style="text-align: left">
             <asp:TextBox ID="TB_usuario" runat="server" MaxLength="20"></asp:TextBox>
@@ -27,7 +29,7 @@
     </tr>
     <tr>
         <td style="text-align: right" class="auto-style24">
-            <asp:Label ID="Label2" runat="server" style="color: #FFFFFF" Text="Clave:"></asp:Label>
+            <asp:Label ID="Lb_clave" runat="server" style="color: #FFFFFF" Text="Clave:"></asp:Label>
         </td>
         <td colspan="2" style="text-align: left">
             <asp:TextBox ID="TB_clave" runat="server" TextMode="Password" MaxLength="20"></asp:TextBox>
@@ -36,7 +38,7 @@
     </tr>
     <tr>
         <td class="auto-style24">
-            <asp:Button ID="Button3" runat="server" BackColor="#003366" ForeColor="White" OnClick="Button3_Click" Text="Ovidastes tu contraseña?" />
+            <asp:Button ID="B_olvidarContraseña" runat="server" BackColor="#003366" ForeColor="White" OnClick="Button3_Click" Text="Ovidastes tu contraseña?" />
         </td>
         <td>
             <asp:Button ID="B_iniciar" runat="server" OnClick="B_iniciar_Click" style="color: #FFFFFF; background-color: #003366" Text="Iniciar" ValidationGroup="v1" />
