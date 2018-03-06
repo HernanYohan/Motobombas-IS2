@@ -7,8 +7,6 @@ using System.Data;
 using Utilitarios;
 using Encapsular;
 using Datos;
-
-
 namespace Logica 
 {
    public class L_productos
@@ -69,7 +67,10 @@ namespace Logica
        return user;
        }
 
-
+       
+       
+      
+   
        
        public DataTable verProductos()
        {

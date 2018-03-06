@@ -29,13 +29,13 @@
     <table class="auto-style1">
         <tr>
             <td class="auto-style2">
-                <asp:Label ID="Lb_productos" runat="server" CssClass="auto-style3" Text="Productos"></asp:Label>
+                <asp:Label ID="Label1" runat="server" CssClass="auto-style3" Text="Productos"></asp:Label>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
         </tr>
         <tr>
             <td class="auto-style8">
                 <br />
-                <asp:GridView ID="GV_ver_productos" runat="server" align="Center" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="id_producto" DataSourceID="producto" ForeColor="#333333" GridLines="None" AllowPaging="True" EmptyDataText="No hay datos" OnRowUpdating="GridView1_RowUpdating" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
+                <asp:GridView ID="GridView1" runat="server" align="Center" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="id_producto" DataSourceID="producto" ForeColor="#333333" GridLines="None" AllowPaging="True" EmptyDataText="No hay datos" OnRowUpdating="GridView1_RowUpdating" OnSelectedIndexChanged="GridView1_SelectedIndexChanged">
                     <AlternatingRowStyle BackColor="White" />
                     <Columns>
                         <asp:TemplateField HeaderText="Marca">
